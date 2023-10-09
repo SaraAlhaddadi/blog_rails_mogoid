@@ -26,14 +26,8 @@ bundle install
 ```
 
   - Set up the MongoDB configuration:
-      Open `config/mongoid.yml`` and update the configuration settings according to your MongoDB setup.
+      Open `config/mongoid.yml` and update the configuration settings according to your MongoDB setup.
 
-  - Set up the database:
-
-```shell
-rake db:create
-rake db:migrate
-```
   - Start the Rails server:
 
 ```shell

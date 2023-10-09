@@ -9,4 +9,13 @@
     <%= post.body %>
   </p>
 
+  <p>
+  <strong>Comments:</strong>
+  <% post.comments.each do |comment| %>
+    <%= render comment %>
+    <p>
+      <%= link_to "Show this comment", comment %>
+    </p>
+  <% end %>
+  </p>
 </div>

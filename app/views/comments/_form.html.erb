@@ -22,8 +22,10 @@
   </div>
 
   <div>
-    <%= form.label :post_id, style: "display: block" %>
-    <%= form.text_field :post_id %>
+    <%= form.label :post_id, "Select Post" %>
+    <%= form.collection_select :post_id, Post.all, :id, :title, prompt: "Select a post" %>
+    <!-- <%= form.label :post_id, style: "display: block" %>
+    <%= form.text_field :post_id %> -->
   </div>
 
   <div>
